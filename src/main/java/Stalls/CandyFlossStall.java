@@ -1,5 +1,7 @@
 package Stalls;
 
+import ThemePark.Visitor;
+
 public class CandyFlossStall extends Stall{
 
     public CandyFlossStall(String name, String ownerName, int parkingSpot){
@@ -11,7 +13,7 @@ public class CandyFlossStall extends Stall{
         return 4.20;
     }
 
-    public Double priceForVisitor() {
+    public Double priceForVisitor(Visitor visitor) {
         return defaultPrice();
     }
 }
